@@ -18,6 +18,7 @@ function onCountryNameInput(event) {
         Notiflix.Notify.info(`Please enter at least ${MIN_LENGHT} characters`,{
             timeout: 2000,
           });
+          clearHTML()
         return;
     } 
     return fetchCountries(name)
